@@ -1,20 +1,20 @@
 QT读取命令行和国际化初探
 ===
-####读取解析命令行
+#### 读取解析命令行
 参考博客：[使用Qt解析命令行参数](https://blog.csdn.net/jcq521045349/article/details/79764090)
 
 使用 **QCommandLineParser** 和 **QCommandLineOption** 这两个类
 - QCommandLineParser 
 - QCommandLineOption ,创建选项
 
-####国际化
+#### 国际化
 参考博客：[Qt与国际化](https://www.cnblogs.com/hebaichuanyeah/p/5628012.html)
 
 使用 **QTranslator** 和 **QLocate** 这两个类
 - QTranslator 加载语言包，供app使用
 - QLocate 检测本地语言环境，方便实现自动设置语言
 
-#####示例代码 mainwindow.cpp
+##### 示例代码 mainwindow.cpp
 
 ```c
 #include "mainwindow.h"
@@ -43,7 +43,7 @@ void MainWindow::on_pushButton_clicked()
 }
 ```
 
-#####示例代码 main.cpp
+##### 示例代码 main.cpp
 
 ```c
 #include "mainwindow.h"
@@ -131,6 +131,6 @@ int main(int argc, char *argv[])
     return a.exec();
 }
 ```
-#####运行结果截图
+##### 运行结果截图
 ![运行结果1](img_CommanderLineAndInternational-1.png "运行截图1")
 ![运行结果2](img_CommanderLineAndInternational-2.png "运行截图2")
